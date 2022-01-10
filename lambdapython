@@ -1,0 +1,13 @@
+import json
+
+def lambda_handler(event, context):
+    # TODO implement
+    body = "Hello from lambda function created by gopal to test lambda and api"
+    statusCode = 200
+    return {
+        'statusCode': 200,
+        'body': json.dumps(body),
+        'headers': {
+            "Content-Type": "application/json"
+        }
+    }
